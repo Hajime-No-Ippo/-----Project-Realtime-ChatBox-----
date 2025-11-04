@@ -1,3 +1,4 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/erictao)
 # Chatbox – Localhost Real-Time Chat Application
 
 A minimal real-time online chatbox built with Node.js and Socket.IO, intended for local use.  
@@ -38,4 +39,8 @@ You’ll need:
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/your-username/chatbox-socketio.git  
-   cd chatbox-socketio  
+   cd chatbox-socketio
+2. Running the code in your terminal
+   ```bash  
+   npm run devStart
+3. You can locally host this Website. :)
