@@ -1,4 +1,11 @@
- const socket = io('http://localhost:3000')
+// Replace the localhost URL with your deployed backend URL:
+const SERVER_URL = process.env.SERVER_URL || "'https://grateful-francene-maynoothuniversity-7d5783cc.koyeb.app'";
+
+// If you’re not using build-time env vars, you can just hard-code for now:
+const socket = io(SERVER_URL, {
+  withCredentials: true
+});
+
  const messageContainer = document.getElementById('message-container')
  const messageForm = document.getElementById('send-container')
  const messageInput = document.getElementById('message-input')
