@@ -7,9 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "devStart": "nodemon server.js"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
