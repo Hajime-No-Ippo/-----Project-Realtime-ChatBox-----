@@ -43,7 +43,6 @@ io.on('connection', socket => {
 
     socket.on('disconnect', () => {
       const name = users[socket.id]
-    socket.broadcast.emit('user-disconnected', users[socket.id])
     if (name) socket.broadcast.emit('user-disconnected', name)
       else socket.broadcast.emit('user-disconnected', 'Unknown User')
     delete users[socket.id]

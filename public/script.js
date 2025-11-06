@@ -1,20 +1,14 @@
-// Replace the localhost URL with your deployed backend URL:
-const SERVER_URL = "https://grateful-francene-maynoothuniversity-7d5783cc.koyeb.app";
-
-// If you’re not using build-time env vars, you can just hard-code for now:
-const socket = io(SERVER_URL, {
-  withCredentials: true
-});
-
-/*const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 const SERVER_URL = isLocal
   ? "http://127.0.0.1:3000"
   : "https://grateful-francene-maynoothuniversity-7d5783cc.koyeb.app";
 
-const socket = io(SERVER_URL, { withCredentials: true });
+const socket = io(SERVER_URL, {
+  withCredentials: true
+});
 
 //Swith between Product with Dev
-*/
+
 
  const messageContainer = document.getElementById('message-container')
  const messageForm = document.getElementById('send-container')
