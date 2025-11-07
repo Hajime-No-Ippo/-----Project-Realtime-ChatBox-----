@@ -46,6 +46,7 @@ function appendMessage(message, type = 'incoming'){
     messageElement.classList.add('message');
     messageElement.classList.add(type);  // 'incoming' or 'outgoing'
     messageContainer.append(messageElement)
+    messageContainer.scrollTop = messageContainer.scrollHeight;
 
     requestAnimationFrame(() => {
     messageElement.classList.add('show');
